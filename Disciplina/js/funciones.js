@@ -6,48 +6,34 @@ function display(opt)
 		case 1:
 			midArea.innerHTML = '<div class="squareArea"><div class="infoArea">' +
 									'<h1>La quinta disciplina</h1>' +
-									'<button class="btnNav">Introducción</button>' +
-									'<button class="btnNav">Conceptos</button>' +
+									'<button class="btnNav" onclick="subDisplay(1)">Introducción</button>' +
+									'<button class="btnNav" onclick="subDisplay(2)">Conceptos</button>' +
 								'</div>' +
-								'<div class="interactArea2" id="interactArea">' +
-				
-								'</div>' +
-								'<div class="infoArea2">' +
-				
+								'<div class="interactArea" id="interactArea">' +
 								'</div></div>';
 		break;
 		case 2:
 			midArea.innerHTML = '<div class="squareArea">' +
 									'<div class="infoArea">' +
 										'<h1>Arquetipos</h1>' +
-										'<button class="btnNav">Introducción</button>' +
-										'<button class="btnNav">Conceptos</button>' +
-										'<button class="btnNav">Los Arquetipos</button>' +
-										'<button class="btnNav">Actividad</button>' +
+										'<button class="btnNav" onclick="subDisplay(3)">Introducción</button>' +
+										'<button class="btnNav" onclick="subDisplay(4)">Conceptos</button>' +
+										'<button class="btnNav" onclick="subDisplay(5)">Los Arquetipos</button>' +
+										'<button class="btnNav" onclick="subDisplay(6)">Actividad</button>' +
 									'</div>' +
-									'<div class="interactArea2" id="interactArea">' +
-										
-									'</div>' +
-									'<div class="infoArea2">' +
-										
-									'</div>' +
-								'</div>';
+									'<div class="interactArea" id="interactArea">' +
+								'</div></div>';
 		break;
 		case 3:
 			midArea.innerHTML = '<div class="squareArea">' +
 									'<div class="infoArea">' +
 										'<h1>The Macroscope</h1>' +
-										'<button class="btnNav">Infografía 1</button>' +
-										'<button class="btnNav">Infografía 2</button>' +
-										'<button class="btnNav">Infografía 3</button>' +
+										'<button class="btnNav" onclick="subDisplay(7)">Infografía 1</button>' +
+										'<button class="btnNav" onclick="subDisplay(8)">Infografía 2</button>' +
+										'<button class="btnNav" onclick="subDisplay(9)">Infografía 3</button>' +
 									'</div>' +
-									'<div class="interactArea2" id="interactArea">' +
-										
-									'</div>' +
-									'<div class="infoArea2">' +
-										
-									'</div>' +
-								'</div>';
+									'<div class="interactArea" id="interactArea">' +
+								'</div></div>';
 		break;
 		case 4:
 			midArea.innerHTML = '<div class="squareArea">' +
@@ -56,50 +42,51 @@ function display(opt)
 				'<div class="profileDiv"><div class="imgProfile"><img src="sources/p3.jpg"></div><h2>Jorge Maya</h2><h3>jorgemaya08@hotmail.com</h3></div>' +
 				'</div>';
 		break;
-		case 5:
-			midArea.innerHTML = '<div class="squareArea" id="gameArea">' +
-				'<div class="question" id="quest"></div>' +
-				'<div class="options">' +
-					'<div class="opt" id="opt1" onclick="checkAns(0)"></div>' +
-					'<div class="opt" id="opt2" onclick="checkAns(1)"></div>' +
-				'</div>' +
-			'</div>';
-			firstGame();
-		break;
-		case 6:
-			midArea.innerHTML ='<div class="infoArea">' +
-			'<div class="btnBriggs" style="background: #0BB502;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#0BB502\'" onclick="displayBriggs(1)">ISTJ</div>' +
-			'<div class="btnBriggs" style="background: #03B460;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#03B460\'" onclick="displayBriggs(2)">ISFJ</div>' +
-			'<div class="btnBriggs" style="background: #7DD81B;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#7DD81B\'" onclick="displayBriggs(3)">ISTP</div>' +
-			'<div class="btnBriggs" style="background: #044101;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#044101\'" onclick="displayBriggs(4)">ISFP</div>' +
-			'<div class="btnBriggs" style="background: #C2E111;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#C2E111\'" onclick="displayBriggs(5)">ESTP</div>' +
-			'<div class="btnBriggs" style="background: #F5BC0E;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#F5BC0E\'" onclick="displayBriggs(6)">ESFP</div>' +
-			'<div class="btnBriggs" style="background: #F3F847;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#F3F847\'" onclick="displayBriggs(7)">ESTJ</div>' +
-			'<div class="btnBriggs" style="background: #EEA817;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#EEA817\'" onclick="displayBriggs(8)">ESFJ</div>' +
-		'</div>' +
-		'<div class="interactArea2 divBriggs" id="interactArea2">' +
-			'<div class="gameArea" id="gameArea">' +
-				'<div class="instructions">Contesta las siguientes preguntas para descubrir tu perfil en el indicador Mayer Briggs (O si así lo deseas, puedes hacer seleccionar las opciones de los extremos para desplegar información al respecto).</div>' +
-				'<button class="btnShowTest" onclick="showTest()">Comenzar</button>' +
-			'</div>' +
-		'</div>' +
-		'<div class="infoArea2">' +
-			'<div class="btnBriggs" style="background: #06A894;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#06A894\'" onclick="displayBriggs(9)">INFJ</div>' +
-			'<div class="btnBriggs" style="background: #0547A9;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#0547A9\'" onclick="displayBriggs(10)">INTJ</div>' +
-			'<div class="btnBriggs" style="background: #013641;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#013641\'" onclick="displayBriggs(11)">INFP</div>' +
-			'<div class="btnBriggs" style="background: #5615AE;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#5615AE\'" onclick="displayBriggs(12)">INTP</div>' +
-			'<div class="btnBriggs" style="background: #D12810;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#D12810\'" onclick="displayBriggs(13)">ENFP</div>' +
-			'<div class="btnBriggs" style="background: #F2578D;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#F2578D\'" onclick="displayBriggs(14)">ENTP</div>' +
-			'<div class="btnBriggs" style="background: #EC6B2D;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#EC6B2D\'" onclick="displayBriggs(15)">ENFJ</div>' +
-			'<div class="btnBriggs" style="background: #F26A57;" onmouseover="this.style.background = \'black\'" onmouseleave="this.style.background = \'#F26A57\'" onclick="displayBriggs(16)">ENTJ</div>' +
-		'</div>';
-		break;
 		default:
 			midArea.innerHTML = 'ERROR';
 			flagPareto = false;
 		break;
 	}
 }
+
+function subDisplay(opt)
+{
+	intArea = document.getElementById("interactArea");
+	switch (opt) 
+	{
+		case 1:
+			intArea.innerHTML = 'Introducción Quinta Disciplina';
+		break;
+		case 2:
+			intArea.innerHTML = 'Conceptos Quinta Disciplina';
+		break;
+		case 3:
+			intArea.innerHTML = 'Introducción Arquetipos';
+		break;
+		case 4:
+			intArea.innerHTML = 'Conceptos Arquetipos';
+		break;
+		case 5:
+			intArea.innerHTML = 'Mostrar Arquetipos';
+		break;
+		case 6:
+			intArea.innerHTML = 'Actividad Arquetipos';
+		break;
+		case 7:
+			intArea.innerHTML = 'Infografía 1';
+		break;
+		case 8:
+			intArea.innerHTML = 'Infografía 2';
+		break;
+		case 9:
+			intArea.innerHTML = 'Infografía 3';
+		break;
+		default:
+			intArea.innerHTML = 'ERROR';
+		break;
+	}
+}
+
 
 function displayBriggs(opt)
 {
