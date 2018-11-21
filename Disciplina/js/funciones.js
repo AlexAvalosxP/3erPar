@@ -21,7 +21,7 @@ function display(opt)
 										'<button class="btnNav" onclick="subDisplay(5)">Los Arquetipos</button>' +
 										'<button class="btnNav" onclick="subDisplay(6)">Actividad</button>' +
 									'</div>' +
-									'<div class="interactArea" id="interactArea">' +
+									'<div class="interactArea divArquet" id="interactArea">' +
 								'</div></div>';
 		break;
 		case 3:
@@ -67,7 +67,16 @@ function subDisplay(opt)
 			intArea.innerHTML = 'Conceptos Arquetipos';
 		break;
 		case 5:
-			intArea.innerHTML = 'Mostrar Arquetipos';
+			intArea.innerHTML = '<div class="btnArquet" onclick="displayArquet(1)">Compensación entre proceso y demora</div>' +
+				'<div class="btnArquet" onclick="displayArquet(2)">Límites del crecimiento</div>' +
+				'<div class="btnArquet" onclick="displayArquet(3)">Desplazamiento de la carga</div>' +
+				'<div class="btnArquet" onclick="displayArquet(4)">Desplazamiento de la carga hacia la intervención</div>' +
+				'<div class="btnArquet" onclick="displayArquet(5)">Erosión de metas</div>' +
+				'<div class="btnArquet" onclick="displayArquet(6)">Escalada</div>' +
+				'<div class="btnArquet" onclick="displayArquet(7)">Éxito para quien tiene éxito</div>' +
+				'<div class="btnArquet" onclick="displayArquet(8)">Tragedia del terreno común</div>' +
+				'<div class="btnArquet" onclick="displayArquet(9)">Soluciones rápidas que fallan</div>' +
+				'<div class="btnArquet" onclick="displayArquet(10)">Crecimiento y subinversión</div>';
 		break;
 		case 6:
 			intArea.innerHTML = 'Actividad Arquetipos';
@@ -88,122 +97,90 @@ function subDisplay(opt)
 }
 
 
-function displayBriggs(opt)
+function displayArquet(opt)
 {
-	area = document.getElementById("interactArea2");
+	area = document.getElementById("interactArea");
 	switch (opt) 
 	{
 		case 1:
-			area.innerHTML = '<h1>Inspector</h1>' +
-			'<h2>Introvertido, Sensorial, Racional (Thinking), Calificador (Judging)</h2>' +
-			'<p>Se trata de personas disciplinadas y responsables en el trabajo. No se distraen cuando están llevando a cabo alguna tarea. Son realistas, serios y callados. Les gusta tenerlo todo organizado; ya sea en el trabajo, en casa o en su vida entera. Valoran mucho las tradiciones y la lealtad.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Compensación entre proceso y demora</h1>' +
+			'<p>Una persona, un grupo o una organización, actuando con miras a una meta, adaptan su conducta en respuesta a la realimentación demorada. Si no son conscientes de la demora, realizan más acciones correctivas de las necesarias o a veces desisten por que no ven ningún progreso.</p><br>' +
+			'<p><b>Síntoma de Advertencia:</b> "Creíamos que estábamos en equilibrio, pero luego tomamos una medida excesiva". (Luego podemos tomar una medida excesiva en sentido contrario).</p><br>' +
+			'<p><b>Principio Administrativo:</b> En un sistema lento, la agresividad produce inestabilidad. Debes ser paciente o lograr que el sistema reaccione mejor</p><br>' +
+			'<button onclick="showTips(' + opt + ')">Desplegar estructura</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 2:
-			area.innerHTML = '<h1>Protector</h1>' +
-			'<h2>Introvertido, Sensorial, Emocional (Feeling), Calificador (Judging)</h2>' +
-			'<p>Callados pero sociables, concienzudos. Son responsables y estables en sus obligaciones que cumplen de manera precisa. Leales, considerados y propensos a recordar detalles de personas que consideran importantes, ya que suelen preocuparse por cómo se sienten los demás.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Límites del crecimiento</h1>' +
+			'<p>Un proceso se alimenta de sí mismo para producir un período de crecimiento o expansión acelerada. Luego el crecimiento se vuelve más lento (a menudo en forma inexpìcable para quienes participan en el sistema) y puede detenerse o se revierte e inicia un colapso acelerado. La fase de crecimiento es causada por uno o varios procesos de realimentación reforzadora. La desaceleración surge por un proceso compensador que se activa cuando se llega a un "límite". El límite puede ser una restricción en los recursos, o una reacción externa o interna ante el crecimiento. El colapso acelerado (cuando ocurre)surge del proceso reforzador que se revierte, generando cada vez más contracción.</p><br>' +
+			'<p><b>Síntoma de Advertencia:</b> "¿Por qué preocuparnos por problemas que no tenemos? Estamos creciendo muchísimo". (Poco después: "Claro que hay algunos problemas, pero sólo debemos volver a lo que antes funcionaba". Más tarde: "Cuanto más corremos, más permanecemos en el mismo lugar".)</p><br>' +
+			'<p><b>Principio Administrativo:</b> No presiones el proceso reforzador (de crecimiento); elimina (o debilita) el factor limitativo.</p><br>' +
+			'<button onclick="showTips(' + opt + ')">Desplegar estructura</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 3:
-			area.innerHTML = '<h1>Artesano</h1>' +
-			'<h2>Introvertido, Sensorial, Racional (Thinking), Perceptivo</h2>' +
-			'<p>Tolerantes y flexibles, son observadores callados hasta que un problema aparece, entonces actúan rápido para encontrar soluciones que funcionen. Interesados en la relación causa-efecto, suelen organizar los hechos utilizando los principios lógicos y valoran la eficiencia.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Desplazamiento de la carga</h1>' +
+			'<p>Se usa una "solución" de corto plazo para corregir un problema, con resultados inmediatos aparentemente positivos. A medida que esta corrección se usa cada vez más, las medidas correctivas fundamentales se aplican cada vez menos. Con el tiempo, las aptitudes para la solución fundamental se atrofian, creando mayor dependencia respecto de la solución sintomática.</p><br>' +
+			'<p><b>Síntoma de Advertencia:</b> "¡Esta solución ha funcionado hasta ahora! ¿Quién dice que nos esperan problemas?</p><br>' +
+			'<p><b>Principio Administrativo:</b> Concéntrate en la solución fundamental. Si la solución sintomática es imperativa (a causa de las demoras de la solución fundamental), úsala para ganar tiempo mientras trabajas en la solución fundamental.</p><br>' +
+			'<button onclick="showTips(' + opt + ')">Desplegar estructura</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 4:
-			area.innerHTML = '<h1>Compositor</h1>' +
-			'<h2>Introvertido, Sensorial, Emocional (Feeling), Perceptivo</h2>' +
-			'<p>Amables y amigos de sus amigos. Disfrutan del “ahora”,de lo que les rodea. Les gusta tener su propio espacio para trabajar. Son leales y defienden sus valores y a las personas que son importantes para ellos. Prefieren evitar los conflictos y las discusiones, por lo que no fuerzan a los demás a creer sus opiniones.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Desplazamiento de la carga hacia la intervención</h1>' +
+			'<p>Las estructuras de desplazamiento de la carga son tan comunes y perniciosas en caso de intervención externa que merecen una atención especial. La intervención procura aliviar síntomas de problemas obvios, y lo hace tan bien que los integrantes del sistema jamás aprenden a afrontar los problemas.</p><br>' +
+			'<p><b>Principio Administrativo:</b> "Enseña a la gente a pescar, en vez de darle pescado". Concéntrate en afinar las aptitudes del "organismo huésped" para resolver sus propios problemas. Si se necesita ayuda externa, se debe limitar estrictamente a una intervención única (y todos deben saberlo de antemano) o ayudar a la gente a desarrollar su propia capacidad, recursos e infraestructura para que sea más capaz en el futuro.</p><br>' +
+			'<p></p><br>' +
+			'<button onclick="showTips(' + opt + ')">Desplegar estructura</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 5:
-			area.innerHTML = '<h1>Promotor</h1>' +
-			'<h2>Extrovertido, Sensorial, Racional (Thinking), Perceptivo</h2>' +
-			'<p>Flexibles y tolerantes, toman una posición pragmática centrada en resultados inmediatos. Les aburren las teorías y las explicaciones conceptuales; por el contrario prefieren actuar con toda su energía para solucionar los problemas. Se centran en el “aquí y ahora”, son espontáneos y disfrutan de cada momento en el que pueden estar con otras personas. Aprenden mejor haciendo que escuchando.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Erosión de metas</h1>' +
+			'<p>Una estructura de desplazamiento de la carga donde la solución de corto plazo significa el deterioro de una meta fundamental de largo plazo.</p><br>' +
+			'<p><b>Síntoma de Advertencia:</b> "No importa que nuestras pautas de desempeño se deterioren un poco, sólo hasta que termine la crisis". </p><br>' +
+			'<p><b>Principio Administrativo:</b> Sostén la visión</p><br>' +
+			'<button onclick="showTips(' + opt + ')">Desplegar estructura</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 6:
-			area.innerHTML = '<h1>Actor</h1>' +
-			'<h2>Extrovertido, Sensorial, Emocional (Feeling), Perceptivo</h2>' +
-			'<p>Extrovertidos, amigables, y razonables. Les encanta la vida social, la gente y el confort material. Disfrutan trabajando con otras personas y suelen aportar un enfoque realista en sus actividades; eso sí, intentando hacer el trabajo divertido. Aprenden mejor intentando utilizar la nueva habilidad con otras personas.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Escalada</h1>' +
+			'<p>Dos personas u organizaciones entienden que su bienestar depende de una ventaja relativa de una sobre la otra. Cuando una se adelanta, la otra se siente amenazada y actúa con mayor agresividad para recobrar su ventaja, los cual amenaza a la primera, aumentando su agresividad, y así sucesivamente. A menudo cada parte ve su conducta agresiva como una reacción defensiva ante la agresión de la otra; pero la "defensa" de cada parte deriva de una escalada que escapa a la voluntad de ambas. </p><br>' +
+			'<p><b>Síntoma de Advertencia:</b> "Si nuestro oponente se aplacara, podríamos dejar de librar esta batalla para hacer otras cosas".</p><br>' +
+			'<p><b>Principio Administrativo:</b> Busca el modo de que ambas partes "ganen" o alcancen sus objetivos. En muchos casos, una parte puede revertir unilateralmente la espiral viciosa al realizar "agresivos" actos pacíficos que hagan sentir al otro menos amenazado.</p><br>' +
+			'<button onclick="showTips(' + opt + ')">Desplegar estructura</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 7:
-			area.innerHTML = '<h1>Supervisor</h1>' +
-			'<h2>Extrovertido, Sensorial, Racional (Thinking), Calificador (Judging)</h2>' +
-			'<p>Son gente práctica, realista, decisivos y veloces tomando decisiones. Organizan los proyectos y a la gente para que las cosas se hagan de la manera más eficiente posible. Cuidan hasta el más mínimo detalle y tiene establecidos claros valores que siguen sistemáticamente y quieren que los demás también lo hagan.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Éxito para quien tiene éxito</h1>' +
+			'<p>Dos actividades compiten por recursos limitados. A mayor éxito, mayor respaldo, con lo cual la otra se queda sin recursos.</p><br>' +
+			'<p><b>Síntoma de Advertencia:</b> Una de las dos actividades, grupos o individuos interrelacionados comienza a andar muy bien mientras el otro apenas subsiste.</p><br>' +
+			'<p><b>Principio Administrativo:</b> Busca la meta abarcadora de logro equilibrado de ambas opciones. En algunos casos, rompe o debilita el eslabonamiento entre ambas, para que no compitan por el mismo recurso limitado (esto es deseable en casos donde ese eslabonamiento pasa inadvertido y crea una insalubre competencia por los recursos).</p><br>' +
+			'<button onclick="showTips(' + opt + ')">Desplegar estructura</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 8:
-			area.innerHTML = '<h1>Proveedor</h1>' +
-			'<h2>Extrovertido, Sensorial, Emocional (Feeling), Calificador (Judging)</h2>' +
-			'<p>Les gusta estar en armonía con su alrededor y se esfuerzan con determinación para establecer esa situación de tranquilidad. Prefieren trabajar en compañía para completar el trabajo a tiempo y de manera precisa. Son leales, e intentan satisfacer las necesidades ajenas siempre que pueden. Quieren ser apreciados por lo que son y por su contribución con la sociedad.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Tragedia del terreno común</h1>' +
+			'<p>Los individuos utilizan un recurso común pero limitado reparando únicamente en las necesidades individuales. Al principio son recompensados, pero eventualmente hay una disminución en las ganancias, lo cual les induce a intensificar los esfuerzos. Al final agotan o erosionan el recurso.</p><br>' +
+			'<p><b>Síntoma de Advertencia:</b> "Había en abundancia para todos. Ahora las cosas están difíciles. Si deseo sacar provecho este año, tendré que trabajar más".</p><br>' +
+			'<p><b>Principio Administrativo:</b> Administra el "terreno común" educando a todos y creando formas de autorregulación y presiones de pares, o mediante un mecanismo de regulación oficial, idealmente diseñado por los participantes.</p><br>' +
+			'<button onclick="showTips(' + opt + ')">Desplegar estructura</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 9:
-			area.innerHTML = '<h1>Consejero</h1>' +
-			'<h2>Introvertido, Intuitivo (iNtuition), Emocional (Feeling), Calificador (Judging)</h2>' +
-			'<p>Son personas acostumbradas a buscar el significado y la conexión entre ideas, en las relaciones y las posesiones materiales. Quieren entender lo que motiva a los demás a actuar. Además, sin cabezotas y defensores leales de sus valores. Suelen intentar desarrollar una visión clara sobre cómo se puede contribuir al bien común. Son organizados y determinados en imponer su visión.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Soluciones rápidas que fallan</h1>' +
+			'<p>Una solución eficaz en el corto plazo tiene consecuencias de largo plazo imprevistas que requieren más uso de la misma solución.</p><br>' +
+			'<p><b>Síntoma de Advertencia:</b> "Siempre funcionó antes. ¿Por qué no funciona ahora?".</p><br>' +
+			'<p><b>Principio Administrativo:</b> No descuides el largo plazo. De ser posible no recurras a las soluciones de corto plazo, o úsalas sólo para ganar tiempo mientras trabajas en un remedio duradero.</p><br>' +
+			'<button onclick="showTips(' + opt + ')">Desplegar estructura</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 10:
-			area.innerHTML = '<h1>Mente Maestra</h1>' +
-			'<h2>Introvertido, Intuitivo (iNtuition), Racional (Thinking), Calificador (Judging)</h2>' +
-			'<p>Son originales y creativos, siempre se las ingenian para salirse con la suya y conseguir lo quen. Rápidos observando lo que sucede a su alrededor y desarrollando explicaciones. Son bastante escépticos e independientes.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
-		break;
-		case 11:
-			area.innerHTML = '<h1>Sanador</h1>' +
-			'<h2>Introvertido, Intuitivo (iNtuition), Emocional (Feeling), Perceptivo</h2>' +
-			'<p>Idealistas, quieren que su vida sea congruente con sus valores. Son curiosos y les gusta barajar diferentes opciones antes de tomar una decisión. Intentan entender a la gente y ayudarles a llenar su potencial. Son flexibles y se adaptan bien a las situaciones a menos que uno de sus valores se vea amenazado.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
-		break;
-		case 12:
-			area.innerHTML = '<h1>Arquitecto</h1>' +
-			'<h2>Introvertido, Intuitivo (iNtuition), Racional (Thinking), Perceptivo</h2>' +
-			'<p>Intentan desarrollar explicaciones lógicas para todo lo que les interesa. Prefieren lo abstracto y lo teórico,por tanto, están más interesados en las ideas que en las interacciones sociales. Callados e introvertidos pero flexibles y adaptables. Tienen una habilidad inusual para centrarse en solventar los problemas. Suelen ser escépticos y críticos siempre desde un punto de vista analítico.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
-		break;
-		case 13:
-			area.innerHTML = '<h1>Campeón</h1>' +
-			'<h2>Extrovertido, Intuitivo (iNtuition), Emocional (Feeling), Perceptivo</h2>' +
-			'<p>Acogedores, entusiastas e imaginativos. Ven la vida como una gran variedad de posibilidades. Hacen conexiones rápidas entre lo que sucede y la información que ya tienen, y actúan según los patrones que pueden observar. Les gusta conseguir la máxima información posible de los demás, a los que aprecian y apoyan con mucha facilidad.Son espontáneos, con mucha “labia” y acostumbran a improvisar.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
-		break;
-		case 14:
-			area.innerHTML = '<h1>Inventor</h1>' +
-			'<h2>Extrovertido, Intuitivo (iNtuition), Racional (Thinking), Perceptivo</h2>' +
-			'<p>Rápidos, ingeniosos, siempre a alerta y muy habladores. Cuentan con muchos recursos a la hora de solucionar los problemas más complicados. Suelen generar conceptos que posteriormente analizan estratégicamente. Son buenos “fichando” a la gente, se aburren con la rutina y cambian constantemente de intereses.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
-		break;
-		case 15:
-			area.innerHTML = '<h1>Maestro</h1>' +
-			'<h2>Extrovertido, Intuitivo (iNtuition), Emocional (Feeling), Calificador (Judging)</h2>' +
-			'<p>Tienen una gran capacidad para empatizar con los demás. Son emotivos y encuentran potencial en todo el mundo. De hecho, ayudan a los demás a desarrollarse. Uno de sus puntos fuertes es la sociabilidad y tienen una gran capacidad de liderazgo.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
-		break;
-		case 16:
-			area.innerHTML = '<h1>Mariscal de campo</h1>' +
-			'<h2>Extrovertido, Intuitivo (iNtuition), Racional (Thinking), Calificador (Judging)</h2>' +
-			'<p>Sinceros y decisivos, también suelen asumir el liderazgo porque establecen sistemas comprensivos y procedimientos lógicos en las tomas de decisiones. Disfrutan de los planes a largo plazo que tienen un fin determinado. Normalmente están bien informados, leen mucho e intentan expandir sus conocimientos a los demás. Presentan sus ideas con fuerza.</p>' +
-			'<button onclick="showTips(' + opt + ')">Desplegar consejos</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Crecimiento y subinversión</h1>' +
+			'<p>El crecimiento se aproxima a un límite que se puede eliminar o desplazar hacia el futuro si la empresa o individuo invierte en "capacidad" adicional. Pero la inversión debe ser intensa y rápida para impedir la reducción del crecimiento, pues de lo contrario no se hará nunca. A menudo las metas decisivas o las pautas de desempeño se rebajan para justificar la subinversión. Cuando esto ocurre, hay una profecía autopredictiva donde las metas más bajas conducen a expectativas más bajas, que luego se traducen en un mal desempeño causado por la subinversión.</p><br>' +
+			'<p><b>Síntoma de Advertencia:</b> "Bien, éramos los mejores, y lo seremos de nuevo, pero ahora tenemos que conservar los recursos y no invertir en exceso".</p><br>' +
+			'<p><b>Principio Administrativo:</b> Si hay un potencial genuino para el crecimiento, construye capacidad anticipándote a la demanda, como estrategia para generar demanda. Sostén la visión, especialmente en lo concerniente a la evaluación de las pautas de desempeño y la capacidad para satisfacer la demanda potencial</p><br>' +
+			'<button onclick="showTips(' + opt + ')">Desplegar estructura</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		default:
 			area.innerHTML = 'ERROR';
@@ -221,200 +198,68 @@ function showTips(opt) //SHHHHHHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 	tip3=["Las decisiones tomadas a base de emociones pueden ser a veces un poco precipitadas. No significa que sea incorrecto, solo ejerce precaución.", "No siempre la respuesta se encuentra tras un proceso sistemático, siempre ten en cuenta tus emociones y las de los demás."]; // F - T
 	tip4=["Procura salir un poco de tu zona de confort y quizá encuentres un lado muy distinto de la moneda.", "Es muy bueno abrise a todo tipo de situaciones, pero siempre ten en cuenta el riesgo que puede implicar y a los demás."]; // J - P
 
-	area = document.getElementById("interactArea2");
+	area = document.getElementById("interactArea");
 	switch (opt) 
 	{
 		case 1:
-			area.innerHTML = '<h1>Inspector</h1>' +
-			'<h2>Introvertido, Sensorial, Racional (Thinking), Calificador (Judging)</h2>' +
-			'<ul>' +
-				'<li>' + tip1[0] + '</li>' +
-				'<li>' + tip2[0] + '</li>' +
-				'<li>' + tip3[1] + '</li>' +
-				'<li>' + tip4[0] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Compensación entre proceso y demora</h1>' +
+			'<div class="imgArquetipo"><img src="sources/arq1.jpg"></div>' +
+			'<button onclick="displayArquet(' + opt + ')">Desplegar información</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 2:
-			area.innerHTML = '<h1>Protector</h1>' +
-			'<h2>Introvertido, Sensorial, Emocional (Feeling), Calificador (Judging)</h2>' +
-			'<ul>' +
-				'<li>' + tip1[0] + '</li>' +
-				'<li>' + tip2[0] + '</li>' +
-				'<li>' + tip3[0] + '</li>' +
-				'<li>' + tip4[0] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Límites del crecimiento</h1>' +
+			'<div class="imgArquetipo"><img src="sources/arq2.jpg"></div>' +
+			'<button onclick="displayArquet(' + opt + ')">Desplegar información</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 3:
-			area.innerHTML = '<h1>Artesano</h1>' +
-			'<h2>Introvertido, Sensorial, Racional (Thinking), Perceptivo</h2>' +
-			'<ul>' +
-				'<li>' + tip1[0] + '</li>' +
-				'<li>' + tip2[0] + '</li>' +
-				'<li>' + tip3[1] + '</li>' +
-				'<li>' + tip4[1] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Desplazamiento de la carga</h1>' +
+			'<div class="imgArquetipo"><img src="sources/arq3.jpg"></div>' +
+			'<button onclick="displayArquet(' + opt + ')">Desplegar información</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 4:
-			area.innerHTML = '<h1>Compositor</h1>' +
-			'<h2>Introvertido, Sensorial, Emocional (Feeling), Perceptivo</h2>' +
-			'<ul>' +
-				'<li>' + tip1[0] + '</li>' +
-				'<li>' + tip2[0] + '</li>' +
-				'<li>' + tip3[0] + '</li>' +
-				'<li>' + tip4[1] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Desplazamiento de la carga hacia la intervención</h1>' +
+			'<div class="imgArquetipo"><img src="sources/arq4.jpg"></div>' +
+			'<button onclick="displayArquet(' + opt + ')">Desplegar información</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 5:
-			area.innerHTML = '<h1>Promotor</h1>' +
-			'<h2>Extrovertido, Sensorial, Racional (Thinking), Perceptivo</h2>' +
-			'<ul>' +
-				'<li>' + tip1[1] + '</li>' +
-				'<li>' + tip2[0] + '</li>' +
-				'<li>' + tip3[1] + '</li>' +
-				'<li>' + tip4[1] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Erosión de metas</h1>' +
+			'<div class="imgArquetipo"><img src="sources/arq5.jpg"></div>' +
+			'<button onclick="displayArquet(' + opt + ')">Desplegar información</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 6:
-			area.innerHTML = '<h1>Actor</h1>' +
-			'<h2>Extrovertido, Sensorial, Emocional (Feeling), Perceptivo</h2>' +
-			'<ul>' +
-				'<li>' + tip1[1] + '</li>' +
-				'<li>' + tip2[0] + '</li>' +
-				'<li>' + tip3[0] + '</li>' +
-				'<li>' + tip4[1] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Escalada</h1>' +
+			'<div class="imgArquetipo"><img src="sources/arq6.jpg"></div>' +
+			'<button onclick="displayArquet(' + opt + ')">Desplegar información</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 7:
-			area.innerHTML = '<h1>Supervisor</h1>' +
-			'<h2>Extrovertido, Sensorial, Racional (Thinking), Calificador (Judging)</h2>' +
-			'<ul>' +
-				'<li>' + tip1[1] + '</li>' +
-				'<li>' + tip2[0] + '</li>' +
-				'<li>' + tip3[1] + '</li>' +
-				'<li>' + tip4[0] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Éxito para quien tiene éxito</h1>' +
+			'<div class="imgArquetipo"><img src="sources/arq7.jpg"></div>' +
+			'<button onclick="displayArquet(' + opt + ')">Desplegar información</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 8:
-			area.innerHTML = '<h1>Proveedor</h1>' +
-			'<h2>Extrovertido, Sensorial, Emocional (Feeling), Calificador (Judging)</h2>' +
-			'<ul>' +
-				'<li>' + tip1[1] + '</li>' +
-				'<li>' + tip2[0] + '</li>' +
-				'<li>' + tip3[0] + '</li>' +
-				'<li>' + tip4[0] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Tragedia del terreno común</h1>' +
+			'<div class="imgArquetipo"><img src="sources/arq8.jpg"></div>' +
+			'<button onclick="displayArquet(' + opt + ')">Desplegar información</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 9:
-			area.innerHTML = '<h1>Consejero</h1>' +
-			'<h2>Introvertido, Intuitivo (iNtuition), Emocional (Feeling), Calificador (Judging)</h2>' +
-			'<ul>' +
-				'<li>' + tip1[0] + '</li>' +
-				'<li>' + tip2[1] + '</li>' +
-				'<li>' + tip3[0] + '</li>' +
-				'<li>' + tip4[0] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Soluciones rápidas que fallan</h1>' +
+			'<div class="imgArquetipo"><img src="sources/arq9.jpg"></div>' +
+			'<button onclick="displayArquet(' + opt + ')">Desplegar información</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		case 10:
-			area.innerHTML = '<h1>Mente Maestra</h1>' +
-			'<h2>Introvertido, Intuitivo (iNtuition), Racional (Thinking), Calificador (Judging)</h2>' +
-			'<ul>' +
-				'<li>' + tip1[0] + '</li>' +
-				'<li>' + tip2[1] + '</li>' +
-				'<li>' + tip3[1] + '</li>' +
-				'<li>' + tip4[0] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
-		break;
-		case 11:
-			area.innerHTML = '<h1>Sanador</h1>' +
-			'<h2>Introvertido, Intuitivo (iNtuition), Emocional (Feeling), Perceptivo</h2>' +
-			'<ul>' +
-				'<li>' + tip1[0] + '</li>' +
-				'<li>' + tip2[1] + '</li>' +
-				'<li>' + tip3[0] + '</li>' +
-				'<li>' + tip4[1] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
-		break;
-		case 12:
-			area.innerHTML = '<h1>Arquitecto</h1>' +
-			'<h2>Introvertido, Intuitivo (iNtuition), Racional (Thinking), Perceptivo</h2>' +
-			'<ul>' +
-				'<li>' + tip1[0] + '</li>' +
-				'<li>' + tip2[1] + '</li>' +
-				'<li>' + tip3[1] + '</li>' +
-				'<li>' + tip4[1] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
-		break;
-		case 13:
-			area.innerHTML = '<h1>Campeón</h1>' +
-			'<h2>Extrovertido, Intuitivo (iNtuition), Emocional (Feeling), Perceptivo</h2>' +
-			'<ul>' +
-				'<li>' + tip1[1] + '</li>' +
-				'<li>' + tip2[1] + '</li>' +
-				'<li>' + tip3[0] + '</li>' +
-				'<li>' + tip4[1] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
-		break;
-		case 14:
-			area.innerHTML = '<h1>Inventor</h1>' +
-			'<h2>Extrovertido, Intuitivo (iNtuition), Racional (Thinking), Perceptivo</h2>' +
-			'<ul>' +
-				'<li>' + tip1[1] + '</li>' +
-				'<li>' + tip2[1] + '</li>' +
-				'<li>' + tip3[1] + '</li>' +
-				'<li>' + tip4[1] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
-		break;
-		case 15:
-			area.innerHTML = '<h1>Maestro</h1>' +
-			'<h2>Extrovertido, Intuitivo (iNtuition), Emocional (Feeling), Calificador (Judging)</h2>' +
-			'<ul>' +
-				'<li>' + tip1[1] + '</li>' +
-				'<li>' + tip2[1] + '</li>' +
-				'<li>' + tip3[0] + '</li>' +
-				'<li>' + tip4[0] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
-		break;
-		case 16:
-			area.innerHTML = '<h1>Mariscal de campo</h1>' +
-			'<h2>Extrovertido, Intuitivo (iNtuition), Racional (Thinking), Calificador (Judging)</h2>' +
-			'<ul>' +
-				'<li>' + tip1[1] + '</li>' +
-				'<li>' + tip2[1] + '</li>' +
-				'<li>' + tip3[1] + '</li>' +
-				'<li>' + tip4[0] + '</li>' +
-			'</ul>' +
-			'<button onclick="displayBriggs(' + opt + ')">Desplegar información</button>' +
-			'<button onclick="initTest()" class="closeBriggs">X</button>';
+			area.innerHTML = '<h1>Crecimiento y subinversión</h1>' +
+			'<div class="imgArquetipo"><img src="sources/arq10.jpg"></div>' +
+			'<button onclick="displayArquet(' + opt + ')">Desplegar información</button>' +
+			'<button onclick="subDisplay(5)" class="closeBriggs">X</button>';
 		break;
 		default:
 			area.innerHTML = 'ERROR';

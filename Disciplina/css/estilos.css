@@ -19,6 +19,13 @@ body
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
+.imgArquetipo
+{
+	height: 70%;
+	width: 60%;
+	margin-left: 20%;
+}
+
 .squareArea > h1
 {
 	line-height: 70vh;
@@ -329,43 +336,48 @@ svg > rect
 	font-size: 0.8em;
 }
 
-.btnBriggs
+.btnArquet
 {
 	float: left;
-	height: calc((100% / 4) - 10px);
-	width: calc((100% / 2) - 10px);
-	border-radius: 10px;
-	margin: 5px;
-	line-height: 380%;
+	height: calc((100% / 4) - 20px);
+	width: calc((100% / 3) - 20px);
+	border-radius: 25px;
+	margin: 10px;
 	text-align: center;	
-	font-size: 1.7em;
+	font-size: 1.2em;
+	background: #6f3604;
+	color: white;
 }
 
-.divBriggs
+.btnArquet:hover
+{
+	background: black;
+}
+
+.divArquet
 {
 	padding: 40px !important;
 	height: calc(100% - 80px) !important;
-	width: calc(50% - 80px) !important;
-	background: rgba(0,0,0,0.8) !important;
+	width: calc(75% - 80px) !important;
 }
 
-.divBriggs > h1
+.divArquet > h1
 {
 	margin-bottom: 10px;
 	text-align: center;
 }
 
-.divBriggs > h2
+.divArquet > h2
 {
 	margin-bottom: 20px;
 }
 
-.divBriggs > p
+.divArquet > p
 {
 	text-align: justify;
 }
 
-.divBriggs > button
+.divArquet > button
 {
 	height: 50px;
 	width: 350px;
@@ -374,10 +386,10 @@ svg > rect
 	color: white;
 	position: absolute;
 	bottom: 85px;
-	left: calc(50vw - 175px);
+	left: calc(62.5% - 175px);
 }
 
-.divBriggs > button:hover
+.divArquet > button:hover
 {
 	background: black;
 }
@@ -456,7 +468,7 @@ svg > rect
 	width: 50px !important;
 	position: absolute !important;
 	top: calc(105px + 5%) !important;
-	left: 69% !important;
+	left: 94% !important;
 	border-radius: 15px !important;
 	background: rgba(0,0,0,0.8) !important;
 	
