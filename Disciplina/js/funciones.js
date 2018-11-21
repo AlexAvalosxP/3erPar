@@ -106,7 +106,17 @@ function subDisplay(opt)
 			intArea.innerHTML = 'Conceptos Quinta Disciplina';
 		break;
 		case 3:
-			intArea.innerHTML = 'Introducción Arquetipos';
+			intArea.innerHTML = '<h1>Introducción Arquetipos</h1>' +
+				'<p>La palabra viene del griego Archetypos, que significa "modelo primitivo u original". Un hijastro del pensamiento de'+
+				'sistemas, los arquetipos de sistemas fueron desarrollados en Innovation Associates a mediados de los años ochenta.'+
+				'En ese momento el estudio de la dinámica de sistemas dependía de la diagramación de complejos diagramas causales y'+
+				'el modelado en computador, usando ecuaciones matemáticas para definir las relaciones entre variables.</p>'+
+				'<p>Charles Kiefer el Presidente de I.A., sugirió el tratar de comunicar los conceptos mas simplemente. Jennifer Kemeny (con Michael'+
+				'Goodman y Peter Senge, basados en parte en las notas desarrolladas por John Sterman) desarrolló ocho diagramas que'+
+				'ayudarían a ilustrar los comportamientos mas comúnmente vistos. Algunos arquetipos, incluyendo "Límites del'+
+				'crecimiento" y "Desplazamiento de la carga" fueron traducciones de "estructuras genéricas", mecanismos que Jay'+
+				'Forrester y otros pioneros del pensamiento de sistemas describieron en los años sesenta y setenta.</p>'+
+				'<br><img src="sources/in.JPG" style="width:400px; height:210px;">';
 		break;
 		case 4:
 			intArea.innerHTML = 'Conceptos Arquetipos';
