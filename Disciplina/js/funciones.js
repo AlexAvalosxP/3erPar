@@ -118,7 +118,7 @@ function subDisplay(opt)
 				'<br><img src="sources/in.JPG" style="width:400px; height:210px;">';
 		break;
 		case 4:
-			intArea.innerHTML = 'Conceptos Arquetipos';
+			intArea.innerHTML = '<p>Un Arquetipo sistémico es la descripción de un proceso, que ayuda a reconocer comportamientos repetitivos, para encontrar sus puntos de apalancamiento, es decir, permite saber cuál es el cambio adecuado para eliminar el límite más importante que sufre el sistema, a través de lo cual ganará dinamismo en una forma más que proporcional.</p>';
 		break;
 		case 5:
 			intArea.innerHTML = '<div class="btnArquet" onclick="displayArquet(1)">Compensación entre proceso y demora</div>' +
