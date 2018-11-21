@@ -142,6 +142,7 @@ body
 	color: white;
 	border-radius: 0px 0px 0px 0px;
 	padding: 10px;
+	overflow: auto;
 }
 
 .squareArea
@@ -153,6 +154,7 @@ body
 	color: white;
 	border-radius: 30px;
 	text-align: center;
+	overflow: auto;
 }
 
 .btnBottom
@@ -489,4 +491,11 @@ svg > rect
 	border-radius: 20px;
 	color: white;
 	font-size: 1.3em;
+}
+
+.imgInfografia
+{
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 20px; 
 }
