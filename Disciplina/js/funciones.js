@@ -56,13 +56,13 @@ function subDisplay(opt)
 	{
 		case 1:
 			intArea.innerHTML = '<p>En el área de la ingeniería, se habla de innovación cuando existe una idea y esta deja de ser invención y da el siguiente paso, en este proceso convergen ciertos componentes derivados de diversas áreas de investigación, las cuales se disponen como un conjunto para alcanzar el éxito. Esto lo podemos trascender a la siguiente reflexión, cuando se inventa algo y da el siguiente paso se logra la innovación, este logro está en la combinación de diferentes áreas o disciplinas.</p>' +
-								'<p>En la actualidad se hace uso de 5 disciplinas que se concentran para lograr la innovación en las organizaciones Inteligentes. Estas disciplinas se desarrollaron de manera independiente, pero cada una de ellas son decisivas para el éxito de las demás como debe ser cualquier conjunto; la existencia de cada una es vital para el conjunto de todas las disciplinas y en las organizaciones Inteligentes el resultado que estas alcancen está en función del aplicación que se le dé a cada una de las disciplinas.</p>' +;
+								'<p>En la actualidad se hace uso de 5 disciplinas que se concentran para lograr la innovación en las organizaciones Inteligentes. Estas disciplinas se desarrollaron de manera independiente, pero cada una de ellas son decisivas para el éxito de las demás como debe ser cualquier conjunto; la existencia de cada una es vital para el conjunto de todas las disciplinas y en las organizaciones Inteligentes el resultado que estas alcancen está en función del aplicación que se le dé a cada una de las disciplinas.</p>' +
+								'<p>Las Cinco Disciplinas de las Organizaciones Inteligentes Las Organizaciones Inteligentes dominan ' +
+								'cinco disciplinas básicas, que describimos a continuación. Aunque son independientes, las empresas más ' +
+								'exitosas las combinan logrando importantes sinergias y beneficios.</p>';
 		break;
 		case 2:
-			intArea.innerHTML = '<p>Las Cinco Disciplinas de las Organizaciones Inteligentes Las Organizaciones Inteligentes dominan ' +
-								'cinco disciplinas básicas, que describimos a continuación. Aunque son independientes, las empresas más ' +
-								'exitosas las combinan logrando importantes sinergias y beneficios.</p>' +
-								'<h4>Disciplina 1: Dominio Personal (Personal Mastery)</h4>' +
+			intArea.innerHTML = '<h4>Disciplina 1: Dominio Personal (Personal Mastery)</h4>' +
 								'<p>Cuando hablamos de dominio se puede entender como una dominación de personas o incluso de cosas, sin embargo, este término va más allá, entendiéndolo como una habilidad.</p>' +
 								'<p>Por otro lado cuando hablamos del dominio personal se hace referencia a una disciplina que permite aclarar y profundizar la visión personal de cada individuo, así pues concentrar sus energías, desarrollar su paciencia y ver la realidad objetivamente. Por todo esto, se dice que una piedra angular de las organizaciones inteligentes es el dominio personal.</p>' +
 								'<p>Desafortunadamente existen muy pocas organizaciones que estimulan el crecimiento de sus colaboradores, esto trae como consecuencia que se propicie un desperdicio de recursos, ya que en lugar de que las empresas aprovechen a las personas que entran a trabajar con excelente actitudes: personas inteligentes, brillantes, entusiastas, cultos, con muchos deseos de aportar cambios a la empresa; las mismas empresas provocan que dichos colaboradores que en sus inicios eran radiantes, pierdan el sentido de compromiso y que ya no sientan ningún estímulo para seguir con la actitud inicial; las empresas desaprovechan los recursos.</p>' +
@@ -144,7 +144,7 @@ function subDisplay(opt)
 			intArea.innerHTML = '<div class="imgInfografia"><img src="sources/info2.png"><div>';
 		break;
 		case 9:
-			intArea.innerHTML = 'Infografía 3';
+			intArea.innerHTML = '<div class="imgInfografia"><img src="sources/info3.png"><div>';
 		break;
 		default:
 			intArea.innerHTML = 'ERROR';
