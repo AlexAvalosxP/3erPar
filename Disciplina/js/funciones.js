@@ -59,17 +59,20 @@ function subDisplay(opt)
 								'<p>En la actualidad se hace uso de 5 disciplinas que se concentran para lograr la innovación en las organizaciones Inteligentes. Estas disciplinas se desarrollaron de manera independiente, pero cada una de ellas son decisivas para el éxito de las demás como debe ser cualquier conjunto; la existencia de cada una es vital para el conjunto de todas las disciplinas y en las organizaciones Inteligentes el resultado que estas alcancen está en función del aplicación que se le dé a cada una de las disciplinas.</p>' +
 								'<p>Las Cinco Disciplinas de las Organizaciones Inteligentes Las Organizaciones Inteligentes dominan ' +
 								'cinco disciplinas básicas, que describimos a continuación. Aunque son independientes, las empresas más ' +
-								'exitosas las combinan logrando importantes sinergias y beneficios.</p>';
+								'exitosas las combinan logrando importantes sinergias y beneficios.</p>' +
+								'<img src="sources/empresa.jpg">';
 		break;
 		case 2:
 			intArea.innerHTML = '<h4>Disciplina 1: Dominio Personal (Personal Mastery)</h4>' +
 								'<p>Cuando hablamos de dominio se puede entender como una dominación de personas o incluso de cosas, sin embargo, este término va más allá, entendiéndolo como una habilidad.</p>' +
+								'<img src="sources/1.jpg">' +
 								'<p>Por otro lado cuando hablamos del dominio personal se hace referencia a una disciplina que permite aclarar y profundizar la visión personal de cada individuo, así pues concentrar sus energías, desarrollar su paciencia y ver la realidad objetivamente. Por todo esto, se dice que una piedra angular de las organizaciones inteligentes es el dominio personal.</p>' +
 								'<p>Desafortunadamente existen muy pocas organizaciones que estimulan el crecimiento de sus colaboradores, esto trae como consecuencia que se propicie un desperdicio de recursos, ya que en lugar de que las empresas aprovechen a las personas que entran a trabajar con excelente actitudes: personas inteligentes, brillantes, entusiastas, cultos, con muchos deseos de aportar cambios a la empresa; las mismas empresas provocan que dichos colaboradores que en sus inicios eran radiantes, pierdan el sentido de compromiso y que ya no sientan ningún estímulo para seguir con la actitud inicial; las empresas desaprovechan los recursos.</p>' +
 								'<p>Debemos entender que la disciplina del dominio personal inicia aclarando las cosas que de verdad interesan, para concentrar nuestra vida al servicio de nuestras mayores aspiraciones. En este punto, cabe resaltar que es importante primeramente la conexión que debe existir entre el aprendizaje personal y aprendizaje organizacional, ya que los compromisos de ambas partes deben ser recíprocos, es decir, el alma de toda empresa se debe constituir por personas capaces de aprender.</p>' +
 								'<p>En conclusión, debemos enfocarnos en lo que realmente es importante para nosotros como personas y deshacernos de las pequeñeces que nos obstaculizan para lograr el éxito de nuestras aspiraciones personales.<p>' +
 								'<h4>Disciplina 2: Modelos Mentales</h4>' +
 								'<p>Los modelos mentales son suposiciones, generalizaciones o imágenes que están localizados en nuestro inconsciente y tienen influencia sobre nuestra forma de actuar, de pensar y de entender el mundo. Las organizaciones inteligentes hacen uso de modelos mentales internos para impulsar la adopción de ideas nuevas, originales e innovadoras.</p>' +
+								'<img src="sources/2.jpg">' +
 								'<p>La disciplina de trabajar con modelos mentales comienza por aprender a reconstruir la imagen que tenemos del mundo y llevarla a la superficie y así someterla a un riguroso análisis e investigación. Esta disciplina también incluye la aptitud para promover conversaciones de manera abierta donde exista un equilibrio entre la búsqueda y la persuasión, donde la gente de a conocer lo que piensa para que estos pensamientos influyan a otras personas.</p>' +
 								'<p>Se puede decir que los modelos mentales:</p>' +
 								'<li>Son simplificaciones del mundo real</li>' +
@@ -79,6 +82,7 @@ function subDisplay(opt)
 								'<li>Las organizaciones inteligentes deben motivar a sus colaboradores a mejorar sus modelos mentales utilizados; este tipo de organizaciones descubren formas efectivas para cambiar los modelos mentales que usan por patrones cambiantes.</li>' +
 								'<h4>Disciplina 3: Construcción de una Visión Compartida</h4>' +
 								'<p>Una organización no puede alcanzar el éxito o una que cierta grandeza si no se ha propuesto metas, valores, y misione, estos elementos deben ser compartidos dentro de la organización.</p>' +
+								'<img src="sources/3.png">' +
 								'<p>Es de vital importancia y acierto que algunas organizaciones logran unir a sus colaboradores en torno de una identidad y una aspiración común. Cuando existe una verdadera visión la gente aprende y sobresale. Una visión compartida proviene de un interés común. En las organizaciones inteligentes las personas crean visiones compartidas con el objetivo de sentirse unidos o conectados llevando a cabo un trabajo importante y común.</p>' +
 								'<p>Lo importante en esta disciplina es traducir la visión individual en una visión compartida</p>' +
 								'<p>Para crear una visión compartida se necesita:</p>' +
@@ -88,6 +92,7 @@ function subDisplay(opt)
 								'<li>Enunciar las opiniones de manera positiva, no negativa: las opiniones negativas tienen consecuencias nocivas que normalmente todas las organizaciones siempre tratan de evitar, sin embargo las opiniones positivas expresan buenas aspiraciones y no temores.</li>' +
 								'<li>Las organizaciones inteligentes cimientan visiones comunes factibles y de gran alcance, de la misma manera, las organizaciones inteligentes concentran sus esfuerzos en consentimiento con todas las visiones comunes de cada uno colaborador.</li>' +
 								'<h4>Disciplina 4: Aprendizaje en Equipo</h4>' +
+								'<img src="sources/4.png">' +
 								'<p>Los equipos pueden aprender, ya que desarrollan aptitudes extraordinarias para llevar a cabo acciones coordinadas. Cuando los equipos aprenden generan resultados extraordinarios y sus miembros crecen rápidamente.</p>' +
 								'<p>La disciplina del aprendizaje en equipo inicia con el diálogo para integrar un auténtico pensamiento conjunto. El aprendizaje en equipo es de suma importancia ya que la unidad fundamental de aprendizaje en las organizaciones moderna es el equipo y no el individuo. Si los equipos no aprenden, la organización no puede aprender.</p>' +
 								'<p>Para crear un aprendizaje en equipo es necesario:</p>' +
@@ -97,6 +102,7 @@ function subDisplay(opt)
 								'<h4>Disciplina 5: Pensamiento Sistémico</h4>' +
 								'<p>Es importante que las 5 disciplinas se desarrollen como un todo o como un sistema completo.</p>' +
 								'<p>La quinta disciplina, es el pensamiento sistémico; es la disciplina que integra las demás disciplinas, fusionándolas como un todo pero de manera coherente tanto en la teoría como en la práctica. Las 5 disciplinas no pueden ser recursos separados. El pensamiento sistémico nos dice que el todo puede superar la suma de las partes.</p>' +
+								'<img src="sources/5.jpg">' +
 								'<p>El pensamiento sistémico requiere de las demás disciplinas: la visión compartida, los modelos mentales, el aprendizaje en equipo y el dominio personal para cumplir su potencial:</p>' +
 								'<p>La construcción de una visión compartida exhorta a un compromiso a largo plazo.</p>' +
 								'<li>Los modelos mentales destacan la apertura necesaria para despojarnos de las limitaciones de como vemos el mundo.</li>' +
