@@ -10,6 +10,7 @@ function display(opt)
 									'<button class="btnNav" onclick="subDisplay(2)">Conceptos</button>' +
 								'</div>' +
 								'<div class="interactArea divArquet" id="interactArea">' +
+									'<h1 style="margin-top: 18%;">Selecciona un tema</h1>' +
 								'</div></div>';
 		break;
 		case 2:
@@ -22,6 +23,7 @@ function display(opt)
 										'<button class="btnNav" onclick="subDisplay(6)">Actividad</button>' +
 									'</div>' +
 									'<div class="interactArea divArquet" id="interactArea">' +
+									'<h1 style="margin-top: 18%;">Selecciona un tema</h1>' +
 								'</div></div>';
 		break;
 		case 3:
@@ -33,6 +35,7 @@ function display(opt)
 										'<button class="btnNav" onclick="subDisplay(9)">Infografía 3</button>' +
 									'</div>' +
 									'<div class="interactArea" id="interactArea">' +
+									'<h1 style="margin-top: 18%;">Selecciona una inforgrafía</h1>' +
 								'</div></div>';
 		break;
 		case 4:
@@ -87,16 +90,19 @@ function subDisplay(opt)
 		break;
 		case 4:
 			intArea.innerHTML = '<h1>Conceptos Arquetipos</h1>' +
-			'<p><span>Proceso: </span>Conjunto de fases sucesivas de un fenómeno o hecho complejo.</p>'+
-			'<img src="sources/proceso.jpg">'+
+			'<div class="infoNotHalf"><p>Estos “arquetipos sistémicos” o “estructuras genéricas” constituyen la clave para aprender a ver estructuras en nuestra vida personal y laboral. Los arquetipos sistémicos sugieren que no todos los problemas administrativos son únicos, algo que los directivos experimentados saben intuitivamente.</p></div>' +
+			'<div class="columnX"><p><span>Proceso: </span>Conjunto de fases sucesivas de un fenómeno o hecho complejo.</p>' +
 			'<p><span>Límite: </span>Punto o línea que señala el fin o término de una cosa no material; suele indicar un punto que no debe o no puede sobrepasarse.</p>'+
-			'<p><span>Problema: </span>Cuestión que se plantea para hallar un dato desconocido a partir de otros datos conocidos, o para determinar el método que hay que seguir para obtener un resultado dado.</p>'+
 			'<img src="sources/problema.jpg">'+
-			'<p><span>Ventaja: </span>Circunstancia o situación que da superioridad en alguna cosa.</p>'+
-			'<img src="sources/ventaja.jpg">'+
-			'<p><span>Ganancia: </span>Beneficio o provecho que se obtiene de una cosa.</p>'+
 			'<p><span>Subinversión: </span>Situación caracterizada por la realización de un nivel de inversión inferior al necesario para producir el volumen de bienes que demanda el mercado.</p>'+
-			'<img src="sources/Ganancia.jpg">';
+			'<img src="sources/Ganancia.jpg">' +
+			'</div>'+
+			'<div class="columnX"><img src="sources/proceso.jpg">' +
+			'<p><span>Ventaja: </span>Circunstancia o situación que da superioridad en alguna cosa.</p>'+
+			'<p><span>Ganancia: </span>Beneficio o provecho que se obtiene de una cosa.</p>'+
+			'<img src="sources/ventaja.jpg">'+
+			'<p><span>Problema: </span>Cuestión que se plantea para hallar un dato desconocido a partir de otros datos conocidos, o para determinar el método que hay que seguir para obtener un resultado dado.</p>'+
+			'</div>';
 		break;
 		case 5:
 			intArea.innerHTML = '<div class="btnArquet" onclick="displayArquet(1)">Compensación entre proceso y demora</div>' +
