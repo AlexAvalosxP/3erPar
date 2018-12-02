@@ -131,6 +131,7 @@ body
 	float: left;
 	color: white;
 	border-radius: 0px 30px 30px 0px;
+	overflow: auto;
 }
 
 .interactArea2
@@ -154,7 +155,6 @@ body
 	color: white;
 	border-radius: 30px;
 	text-align: center;
-	overflow: auto;
 }
 
 .btnBottom
@@ -341,14 +341,15 @@ svg > rect
 .btnArquet
 {
 	float: left;
-	height: calc((100% / 4) - 20px);
-	width: calc((100% / 3) - 20px);
+	height: calc((100% / 4) - 40px);
+	width: calc((100% / 3) - 40px);
 	border-radius: 25px;
 	margin: 10px;
 	text-align: center;	
 	font-size: 1.2em;
 	background: #6f3604;
 	color: white;
+	padding: 10px;
 }
 
 .btnArquet:hover
@@ -498,4 +499,51 @@ svg > rect
 	width: 70%;
 	margin-left: 15%;
 	margin-top: 20px; 
+}
+
+.imgHalf
+{
+	float: left;
+	width: 40%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 35px;
+}
+
+.infoHalf
+{
+	float: left;
+	width: 40%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 35px;
+	line-height: 35px;
+	text-align: justify;
+}
+
+.infoNotHalf
+{
+	float: left;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 35px;
+	line-height: 35px;
+	text-align: justify;
+}
+
+.columnX
+{
+	float: left;
+	width: 40%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 35px;
+	line-height: 35px;
+	text-align: justify;
+}
+
+.columnX > img, .columnX > p
+{
+	margin-top: 30px !important;
 }
