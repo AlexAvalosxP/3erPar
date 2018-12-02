@@ -86,7 +86,17 @@ function subDisplay(opt)
 				'Forrester y otros pioneros del pensamiento de sistemas describieron en los años sesenta y setenta.</p></div>';
 		break;
 		case 4:
-			intArea.innerHTML = 'Conceptos Arquetipos';
+			intArea.innerHTML = '<h1>Conceptos Arquetipos</h1>' +
+			'<p><span>Proceso: </span>Conjunto de fases sucesivas de un fenómeno o hecho complejo.</p>'+
+			'<img src="sources/proceso.jpg">'+
+			'<p><span>Límite: </span>Punto o línea que señala el fin o término de una cosa no material; suele indicar un punto que no debe o no puede sobrepasarse.</p>'+
+			'<p><span>Problema: </span>Cuestión que se plantea para hallar un dato desconocido a partir de otros datos conocidos, o para determinar el método que hay que seguir para obtener un resultado dado.</p>'+
+			'<img src="sources/problema.jpg">'+
+			'<p><span>Ventaja: </span>Circunstancia o situación que da superioridad en alguna cosa.</p>'+
+			'<img src="sources/ventaja.jpg">'+
+			'<p><span>Ganancia: </span>Beneficio o provecho que se obtiene de una cosa.</p>'+
+			'<p><span>Subinversión: </span>Situación caracterizada por la realización de un nivel de inversión inferior al necesario para producir el volumen de bienes que demanda el mercado.</p>'+
+			'<img src="sources/Ganancia.jpg">';
 		break;
 		case 5:
 			intArea.innerHTML = '<div class="btnArquet" onclick="displayArquet(1)">Compensación entre proceso y demora</div>' +
